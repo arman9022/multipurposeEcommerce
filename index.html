@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecommerce</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- Google Fonts Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- OwlCarousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('img/background/Untitled-1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .nav-link{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .card {--bs-card-border-color: false;}
+        .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {background-color: red;border-radius: 100%;width: 2%;height: 1%;color: white;}
+        .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {background-color: gray;border-radius: 100%;width: 2%;height: 1%;color: white;}
+        .footerFontColor{color: #FBFFFF !important;}
+        @media only screen and (max-width: 500px) {
+            #text1{font-size: 2.5rem !important;}
+            #text2{letter-spacing: 0 !important;}
+            #topSpacing{margin-top: 0 !important;}
+            .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {width: 5% !important;height: 5% !important;}
+            .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {width: 5% !important;height: 5% !important;}
+        }
+        @media only screen and (max-width: 750px) {
+            #text1{font-size: 5rem !important;}
+            #text2{letter-spacing: 0 !important;}
+            #topSpacing{margin-top: 0 !important;}
+        }
+    </style>
+
+  </head>
+  <body>
+    
+    <section class="topBanner">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" style="background-image: url('img/topBanner/Untitled-3.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <div class="container">
+                <strong class="text-white">Free International Shipping with $75 Purchase</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="mainBanner" style="
+    background-image: url('img/mainBanner/Untitled-2.jpg');
+    height: 140vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    ">
+
+        <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert" style="background-image: url('img/topBanner/Untitled-3.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <div class="container">
+                <strong class="text-white">Free International Shipping with $75 Purchase</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div> -->
+
+        <div class="mainB" style="background-image: url('img/aaa/Untitled-1.png');">
+            <div class="container">
+                <div class="row p-2">
+                    <div class="col-lg-4">
+                        Hello guys! Welcome to MeShop
+                    </div>
+                    <div class="col-lg-4">
+                        Email: <span class="fw-bold">free@psdfreebies.com</span> 
+                    </div>
+                    <div class="col-lg-2">
+                        
+                    </div>
+                    <div class="col-lg-2 fw-bold" style="text-align: end;">
+                        EN USD
+                    </div>
+                </div>
+                <hr>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="#">MeStore</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Page</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart-fill"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-list-ul"></i></a></li>
+        
+                        </ul>
+        
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="topSpacing" class="container" style="margin-top: 11rem;">
+            <div class="row">
+                <div class="col-lg-8 p-5 text-center">
+                    <h1 id="text1" class="fw-bold" style="line-height: 4.3rem;font-size: 6rem;">FASHION <br> <span style="color: #F8246E;">CARNIVAL</span> </h1>
+                    <h1 id="text2" style="font-weight:bold;letter-spacing: 4rem;">2022</h1>
+                    <p>Lorem Ipsum. Proin gravida nibh velit it's a cold world out there. This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit it's a cold world out there.</p>
+                    <a href="" class="btn btn-danger">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bannersAndFeaturedProducts">
+        <div class="container pb-5 bg-white">
+
+            <div class="row text-center justify-content-center" style="margin-top: -5%;">
+                <div class="col-4" style="margin-top: -2%;">
+                    <i class="bi bi-send-fill" style="color: gray;background-color: white;border-radius: 100%;padding: 2rem;font-size: 2rem;"></i>
+                    <h3 class="fw-bold mt-4">Free Shipping</h3>
+                    <p>With ESO or more orders</p>
+                </div>
+                <div class="col-4" style="margin-top: -2%;">
+                    <i class="bi bi-stopwatch" style="color: gray;background-color: white;border-radius: 100%;padding: 2rem;font-size: 2rem;"></i>
+                    <h3 class="fw-bold mt-4">Free Refund</h3>
+                    <p>With ESO or more orders</p>
+                </div>
+                <div class="col-4" style="margin-top: -2%;">
+                    <i class="bi bi-globe" style="color: gray;background-color: white;border-radius: 100%;padding: 2rem;font-size: 2rem;"></i>
+                    <h3 class="fw-bold mt-4">Support 24.7</h3>
+                    <p>With ESO or more orders</p>
+                </div>
+            </div>
+            <div class="row p-5 justify-content-around">
+                <div class="col-lg-5 m-1 p-3" style="background-image: url('img/bannersAndFeaturedProducts/Untitled-10.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;">
+                    <div class="row d-inline m-5 p-5">
+                        <div class="col-8">
+                            <h1 class="fw-bold" style="line-height: 2rem;">Fashion <span style="color: #FA224B;">Carnival</span> </h1>
+                            <h1 class="fw-bold"></h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <a href="" class="d-inline btn btn-danger fw-bold">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 m-1 p-3" style="background-image: url('img/bannersAndFeaturedProducts/Untitled-9.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;">
+                    <div class="row d-inline m-5 p-5">
+                        <div class="col-8">
+                            <h1 class="fw-bold" style="line-height: 2rem;">Fashion <span style="color: #FA224B;">Carnival</span> </h1>
+                            <h1 class="fw-bold"></h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <a href="" class="d-inline btn btn-danger fw-bold">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <h3 class="fw-bold">FEATURED PRODUCTS</h3>
+                <p class="fw-bold">Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+            </div>
+            <div class="">
+                <div class="mb-5 pb-5 owl-carousel owl-theme">
+                    <div class="item text-center">
+                        <img class="img-fluid" src="img/bannersAndFeaturedProducts/Untitled-5.jpg" alt="">
+                        <h5 class="mt-2 fw-bold">Orange T-shirt</h5>
+                        <p class="fst-italic">Nike</p>
+                        <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                        <p class="">
+                            <small class="text-muted text-decoration-line-through">$74.00</small> 
+                            <span class="fw-bold text-danger">$69.00</span>
+                        </p>
+                    </div>
+                    <div class="item text-center">
+                        <img class="img-fluid" src="img/bannersAndFeaturedProducts/Untitled-7.jpg" alt="">
+                        <h5 class="mt-2 fw-bold">Orange T-shirt</h5>
+                        <p class="fst-italic">Nike</p>
+                        <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                        <p class="">
+                            <small class="text-muted text-decoration-line-through">$74.00</small> 
+                            <span class="fw-bold text-danger">$69.00</span>
+                        </p>
+                    </div>
+                    <div class="item text-center">
+                        <img class="img-fluid" src="img/bannersAndFeaturedProducts/Untitled-8.jpg" alt="">
+                        <h5 class="mt-2 fw-bold">Orange T-shirt</h5>
+                        <p class="fst-italic">Nike</p>
+                        <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                        <p class="">
+                            <small class="text-muted text-decoration-line-through">$74.00</small> 
+                            <span class="fw-bold text-danger">$69.00</span>
+                        </p>
+                    </div>
+                    <div class="item text-center">
+                        <img class="img-fluid" src="img/bannersAndFeaturedProducts/Untitled-6.jpg" alt="">
+                        <h5 class="mt-2 fw-bold">Orange T-shirt</h5>
+                        <p class="fst-italic">Nike</p>
+                        <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                        <p class="">
+                            <small class="text-muted text-decoration-line-through">$74.00</small> 
+                            <span class="fw-bold text-danger">$69.00</span>
+                        </p>
+                    </div>
+                    <div class="item text-center">
+                        <img class="img-fluid" src="img/bannersAndFeaturedProducts/Untitled-5.jpg" alt="">
+                        <h5 class="mt-2 fw-bold">Orange T-shirt</h5>
+                        <p class="fst-italic">Nike</p>
+                        <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                        <p class="">
+                            <small class="text-muted text-decoration-line-through">$74.00</small> 
+                            <span class="fw-bold text-danger">$69.00</span>
+                        </p>
+                    </div>
+                    <div class="item text-center">
+                        <img class="img-fluid" src="img/bannersAndFeaturedProducts/Untitled-7.jpg" alt="">
+                        <h5 class="mt-2 fw-bold">Orange T-shirt</h5>
+                        <p class="fst-italic">Nike</p>
+                        <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                        <p class="">
+                            <small class="text-muted text-decoration-line-through">$74.00</small> 
+                            <span class="fw-bold text-danger">$69.00</span>
+                        </p>
+                    </div>
+                    <div class="item text-center">
+                        <img class="img-fluid" src="img/bannersAndFeaturedProducts/Untitled-8.jpg" alt="">
+                        <h5 class="mt-2 fw-bold">Orange T-shirt</h5>
+                        <p class="fst-italic">Nike</p>
+                        <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                        <p class="">
+                            <small class="text-muted text-decoration-line-through">$74.00</small> 
+                            <span class="fw-bold text-danger">$69.00</span>
+                        </p>
+                    </div>
+                    <div class="item text-center">
+                        <img class="img-fluid" src="img/bannersAndFeaturedProducts/Untitled-6.jpg" alt="">
+                        <h5 class="mt-2 fw-bold">Orange T-shirt</h5>
+                        <p class="fst-italic">Nike</p>
+                        <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a><a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                        <p class="">
+                            <small class="text-muted text-decoration-line-through">$74.00</small> 
+                            <span class="fw-bold text-danger">$69.00</span>
+                        </p>
+                    </div>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+                <script type="text/javascript">
+                    $('.owl-carousel').owlCarousel({
+                        loop:true,
+                        margin:10,
+                        nav:true,
+                        autoplay:true,
+                        autoplayTimeout:3000,
+                        dots:false,
+                        responsive:{
+                            0:{items:1},
+                            600:{items:2},
+                            1000:{items:4}
+                        }
+                    })
+                </script>
+            </div>
+
+
+
+
+        </div>
+        <!-- <div class="container" style="background-color: white;height: 10vh;"></div> -->
+    </section>
+
+    <section class="latestNews py-5" style="background-image:url('img/bG/Untitled-1.png');background-position: center;background-repeat: no-repeat;background-size: cover; margin-top: -4%;">
+        <div class="container my-5">
+            <div class="row text-center">
+                <h3 class="fw-bold">Latest News</h3>
+                <p class="fw-bold">Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <div class="card" style="width: 22rem;">
+                        <img src="img/latestNews/Untitled-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title fw-bold" style="font-size: 1.3rem;">Porem ipsum dolor sit ame</h6>
+                          <p class="text-muted">Lorem ipsum. Proin gravida nibh</p>
+                          <p class="card-text">Lorem ipsum. Proin gravida nibh velit it's a cold world out there. This is Photo-shop's version of Lorem Ipsum.</p>
+                          <div class="row ">
+                              <div class="col-6">
+                                <a href="#" class="btn btn-danger fw-bold">Read More</a>
+                              </div>
+                              <div class="col-3 ms-auto">
+                                <i class="bi bi-heart-fill" style="color: #FA224B;"></i>
+                                <span class="mx-1">|</span>
+                                <i class="bi bi-chat-fill" style="color: #FA224B;"></i>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card" style="width: 22rem;">
+                        <img src="img/latestNews/Untitled-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold" style="font-size: 1.3rem;">Porem ipsum dolor sit ame</h6>
+                            <p class="text-muted">Lorem ipsum. Proin gravida nibh</p>
+                            <p class="card-text">Lorem ipsum. Proin gravida nibh velit it's a cold world out there. This is Photo-shop's version of Lorem Ipsum.</p>
+                            <div class="row ">
+                                <div class="col-6">
+                                  <a href="#" class="btn btn-danger fw-bold">Read More</a>
+                                </div>
+                                <div class="col-3 ms-auto">
+                                  <i class="bi bi-heart-fill" style="color: #FA224B;"></i>
+                                  <span class="mx-1">|</span>
+                                  <i class="bi bi-chat-fill" style="color: #FA224B;"></i>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card" style="width: 22rem;">
+                        <img src="img/latestNews/Untitled-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold" style="font-size: 1.3rem;">Porem ipsum dolor sit ame</h6>
+                            <p class="text-muted">Lorem ipsum. Proin gravida nibh</p>
+                            <p class="card-text">Lorem ipsum. Proin gravida nibh velit it's a cold world out there. This is Photo-shop's version of Lorem Ipsum.</p>
+                            <div class="row ">
+                                <div class="col-6">
+                                  <a href="#" class="btn btn-danger fw-bold">Read More</a>
+                                </div>
+                                <div class="col-3 ms-auto">
+                                  <i class="bi bi-heart-fill" style="color: #FA224B;"></i>
+                                  <span class="mx-1">|</span>
+                                  <i class="bi bi-chat-fill" style="color: #FA224B;"></i>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="productSection">
+        <div class="container bg-white" style="margin-top: -5%;">
+            <div class="row py-5">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <h3 class="text-center fw-bold">Our Brands</h3>
+                    </div>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4">
+                            <img src="img/productSection/Untitled-1.jpg" class="img-fluid" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class=" fw-bold">Orange T-shirt</h5>
+                              <p class="fst-italic">Nike</p>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                              <p class="">
+                                  <small class="text-muted text-decoration-line-through">$74.00</small> 
+                                  <span class="fw-bold text-danger">$69.00</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4">
+                            <img src="img/productSection/Untitled-2.jpg" class="img-fluid" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class=" fw-bold">Orange T-shirt</h5>
+                              <p class="fst-italic">Nike</p>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                              <p class=""><small class="text-muted text-decoration-line-through">$74.00</small> <span class="fw-bold text-danger">$69.00</span></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4">
+                            <img src="img/productSection/Untitled-3.jpg" class="img-fluid" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class=" fw-bold">Orange T-shirt</h5>
+                              <p class="fst-italic">Nike</p>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                              <p class=""><small class="text-muted text-decoration-line-through">$74.00</small> <span class="fw-bold text-danger">$69.00</span></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4">
+                            <img src="img/productSection/Untitled-4.jpg" class="img-fluid" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class=" fw-bold">Orange T-shirt</h5>
+                              <p class="fst-italic">Nike</p>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                              <p class=""><small class="text-muted text-decoration-line-through">$74.00</small> <span class="fw-bold text-danger">$69.00</span></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <img class="" style="height: 100%;width: 100%;" src="img/productSection/Untitled-9.jpg" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4">
+                            <img src="img/productSection/Untitled-1.jpg" class="img-fluid" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class=" fw-bold">Orange T-shirt</h5>
+                              <p class="fst-italic">Nike</p>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                              <p class=""><small class="text-muted text-decoration-line-through">$74.00</small> <span class="fw-bold text-danger">$69.00</span></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4">
+                            <img src="img/productSection/Untitled-2.jpg" class="img-fluid" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class=" fw-bold">Orange T-shirt</h5>
+                              <p class="fst-italic">Nike</p>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                              <p class=""><small class="text-muted text-decoration-line-through">$74.00</small> <span class="fw-bold text-danger">$69.00</span></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4">
+                            <img src="img/productSection/Untitled-3.jpg" class="img-fluid" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class=" fw-bold">Orange T-shirt</h5>
+                              <p class="fst-italic">Nike</p>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                              <p class=""><small class="text-muted text-decoration-line-through">$74.00</small> <span class="fw-bold text-danger">$69.00</span></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4">
+                            <img src="img/productSection/Untitled-4.jpg" class="img-fluid" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class=" fw-bold">Orange T-shirt</h5>
+                              <p class="fst-italic">Nike</p>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star-fill" style="color: #FFC808;"></i></a>
+                              <a href=""><i class="bi bi-star" style="color: #FFC808;"></i></a>
+                              <p class=""><small class="text-muted text-decoration-line-through">$74.00</small> <span class="fw-bold text-danger">$69.00</span></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row text-center justify-content-center">
+                <div class="col-8">
+                    <h3 class="fw-bold">Never miss any fashion trending</h3>
+                <p class="fw-bold">Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-danger fw-bold mx-2" type="button" id="button-addon2">Read More</button>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="popularBrandsLogo my-5">
+        <div class="container">
+            <div class="row">
+                <img class="img-fluid" src="img/popularBrandsLogo/Untitled-1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footerArea py-5" style="background-image: url('img/footerArea/Untitled-1.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+        <div class="container">
+            <div class="row footerFontColor">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold">About Cmpany</h4>
+                  <ul class="nav flex-column footerFontColor">
+                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit it's a cold world out there.</p>
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p><i class="bi bi-geo-alt-fill"></i> 0123 Main Road, Your City, Ny 123456</p></a>  
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p><i class="bi bi-telephone-fill"></i>(000) 2345-6789)</p> </a>  
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p><i class="bi bi-envelope-fill"></i> info@psdfreebies.com</p> </a>  
+                    
+                    
+                  </ul>
+                </div>
+          
+                <div class="col-lg-2">
+                  <h4 class="fw-bold">My Account</h4>
+                  <ul class="nav flex-column">
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p>My account</p> </a>
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p>Contact</p> </a>
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p>Frequently Questions</p> </a>
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p>Portfolio</p> </a>
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p>Checkout</p> </a>
+                  </ul>
+                </div>
+          
+                <div class="col-lg-2">
+                  <h4 class="fw-bold">Product</h4>
+                  <ul class="nav flex-column">
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p>About Us</p> </a>
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p>Blog</p> </a>
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p>Contact</p> </a>
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p>Services</p> </a>
+                    <a href="" style="color: #FBFFFF;text-decoration: none;"><p>Portfolio</p> </a>
+                  </ul>
+                </div>
+          
+                <div class="col-lg-4">
+                    <h4 class="fw-bold">Follow us</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="nav flex-column">
+                                <a href="" style="color: #FBFFFF;text-decoration: none;"><p><i class="bi bi-google"></i> Google+</p> </a> 
+                                <a href="" style="color: #FBFFFF;text-decoration: none;"><p><i class="bi bi-pinterest"></i> Pinterest</p> </a> 
+                                <a href="" style="color: #FBFFFF;text-decoration: none;"><p><i class="bi bi-vimeo"></i> Vimeo</p> </a> 
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="nav flex-column">
+                                <a href="" style="color: #FBFFFF;text-decoration: none;"><p><i class="bi bi-facebook"></i> Facebook</p> </a> 
+                                <a href="" style="color: #FBFFFF;text-decoration: none;"><p><i class="bi bi-twitter"></i> Twitter</p> </a> 
+                                <a href="" style="color: #FBFFFF;text-decoration: none;"><p><i class="bi bi-rss-fill"></i> RSS</p> </a> 
+                            </ul>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold">Payment Methods</h4>
+                    <img class="img-fluid" src="img/footerArea/Untitled-1.png" alt="">
+                </div>
+            </div>
+            <div class=" text-center justify-content-between py-4">
+                <ul class="nav justify-content-center pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #FBFFFF;text-decoration: none;">Sitemap</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #FBFFFF;text-decoration: none;">Searchs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #FBFFFF;text-decoration: none;">Searchs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #FBFFFF;text-decoration: none;">Advance</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #FBFFFF;text-decoration: none;">Searchs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #FBFFFF;text-decoration: none;">Contact Us</a></li>
+                  </ul>
+                <p class="text-center" style="color: #FBFFFF;text-decoration: none;">&copy; 2022 PSDFreebies.com | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
